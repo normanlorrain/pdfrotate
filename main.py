@@ -1,5 +1,6 @@
 import flet as ft
 import pdf
+import sys
 
 pdfFile = None
 
@@ -8,20 +9,24 @@ img = None
 
 def main(page: ft.Page):
     def pick_files_result(e: ft.FilePickerResultEvent):
-        global pdfFile
-        global img
         if not e.files:
             print("Cancelled!")
             return
         fileDetails = e.files[0]
+
         print(f"User opens {fileDetails.name}")
-        pdfFile = pdf.pdf(fileDetails.path)
+        openFile(fileDetails.path)
+
+    def openFile(path):
+        global pdfFile
+        global img
+        pdfFile = pdf.pdf(path)
         if img:
             page.controls.pop()
         img = pageImage(0)
         page.expand = True
         page.add(img)
-        btnSave.disabled = False
+        btnSave.disabled = True
         bntDn.disabled = False
         bntUp.disabled = False
         btn180.disabled = False
@@ -51,10 +56,14 @@ def main(page: ft.Page):
         pdfFile.rotate()
         img = pageImage(pdfFile.currentPage)
         page.add(img)
+        btnSave.disabled = False
         page.update()
 
     def save(foo):
+        print("Saving file")
         pdfFile.save()
+        btnSave.disabled = True
+        page.update()
 
     pick_files_dialog = ft.FilePicker(on_result=pick_files_result)
     page.overlay.append(pick_files_dialog)
@@ -87,5 +96,9 @@ def main(page: ft.Page):
 
     page.add(ft.Row(spacing=0, controls=[btnOpen, btnSave, bntUp, bntDn, btn180]))
 
+    if len(sys.argv) > 1:
+        openFile(sys.argv[1])
 
-ft.app(target=main)
+
+if __name__ == "__main__":
+    ft.app(target=main)
