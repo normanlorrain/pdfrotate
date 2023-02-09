@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Directory Id="dir970CC30FEA6448CCE16E655F30B9947C" Name="PDFrotate" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="PDFrotate">
+            <Component Id="cmpD4B4F97510890AC7FEA4D5C9FDEB8C82" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{AF572C47-8A65-485D-B9AE-EE034D8842D6}">
+                <File Id="filFF708D8D5915050AD0B5B0E56CE3D9FE" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-console-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp044B80425F6C138EFCCE3C2F244938D0" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{228B6869-FC3E-4DD8-8A3D-17C6AE343F76}">
+                <File Id="filF536B7C4987C064906849CFA805BFFBC" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-datetime-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpB687B5DCD528B07C207D20006BED55F5" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{D59B7645-B3D0-4DD2-8C0E-BC61E49C2BE0}">
+                <File Id="filCE0FBCC32CD3B43622626A0F10D3433A" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-debug-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp4F73086DFD5010FB28BA34D61750AE08" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{46789942-3388-4AC4-8AF5-1160A9BB0B91}">
+                <File Id="fil210C9D8317BBFB069C6D61FFAFCB659A" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-errorhandling-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp0995D8FDFE664FF198A8005B539B410C" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{B028C44E-652E-4B8A-AFEF-510B2537EE14}">
+                <File Id="filB3F0B8310A780B4C4BD44D9C367B653A" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-file-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp88F3B6D595725914BCDFE4FA4B3F2358" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{8FDF3B16-6A4C-4DA8-BE53-8CBAD726962C}">
+                <File Id="filBE08F4E59D1AB541ABF62823EE7BF259" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-file-l1-2-0.dll" />
+            </Component>
+            <Component Id="cmp8F2729200C22014F5AB446D2FE5C44DA" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{5F1773A6-27CC-42DC-B835-9D186ACC0C03}">
+                <File Id="fil5B0F5FF3E2EA89CA9806CCE2D85F8715" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-file-l2-1-0.dll" />
+            </Component>
+            <Component Id="cmpE30E2881CB782FD9AEDE7CB2122463FD" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{822DBD6D-8431-483D-B023-9E6E0334B7AE}">
+                <File Id="fil3EB21B68793ECC059B2698555A1D023B" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-handle-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp065C232A48E1B5AE09EEFB5FC6EEE8D1" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{925C1A35-B8D4-4674-A2A5-F0A4137603A5}">
+                <File Id="filC75CE825F2A07C2FBEA60A1179DF673F" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-heap-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp9428859BDE95916C0038D23ABF66B887" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{2B1B2CC7-32C8-4F4E-AEE2-F67D4EA3557E}">
+                <File Id="filB771C21DE7DADAD11CE5468B8A0DE069" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-interlocked-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp98872C6C062AB0400AA05F8AA953AE92" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{591A7E64-49A8-4F7E-A489-4AF4FB9BDF8D}">
+                <File Id="filE5593FF69173EBAAE3A18746CB5AE277" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-libraryloader-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpAB23940C5CCB349CC9C4106853D4062B" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{15FC6E62-F80A-4D6B-B0E0-DB24F66E9D2E}">
+                <File Id="fil9DA76C2FB1A6FEE46C2F35DB60CBDECA" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-localization-l1-2-0.dll" />
+            </Component>
+            <Component Id="cmpA60B346EF946D3DB94061B2ECF87090B" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{946259F8-2CD7-4108-91FC-063F15672A00}">
+                <File Id="fil6F7DB7ADFF11FF65DA460487EF828B90" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-memory-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp94BAAFC2A9EBFB2719A445F973EE14A5" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{C386750B-D916-4DEC-B6DD-43707F4408E2}">
+                <File Id="filDF689323AEEA47A6761E52BAD58E57DC" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-namedpipe-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp0D2E3160CDB27DB98AF063E5EB787CE7" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{87DF2F2B-9951-4BC6-9CBC-693279E23C98}">
+                <File Id="fil0864BED921C7B836A26C6355543F2F99" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-processenvironment-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp4760E32F74D0918D44DC7F51459D7485" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{266F3150-BE3D-45C9-91DE-2EFAF8C4BD62}">
+                <File Id="filB60F08371E46C545E634A5F43047101E" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-processthreads-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpAFD8A7B8A746DCCB1263AD7C06E3EA28" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{BC7CD8EF-0335-47AC-9E36-85EFF21397D3}">
+                <File Id="fil460086F4E3AD448A82B850E258B5CB54" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-processthreads-l1-1-1.dll" />
+            </Component>
+            <Component Id="cmp9FA8638093578A25F4A95C1457BE3C7F" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{DF7D836C-B303-4934-AEAF-1FA89101F6DC}">
+                <File Id="filD94597EE4BCC67E87406D5C016C7685C" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-profile-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp93180A8994228455AA0CC4C1B9D5DEE7" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{D7B4A8F6-62EC-46D9-9EC9-723DA5609504}">
+                <File Id="fil293E53473F38744879F2AB522988FC2A" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-rtlsupport-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpAEE14D4F1DA6C97344AFF001CD0B6A77" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{CA045840-79F8-44DC-B766-C5271437B3CC}">
+                <File Id="filDAF4FA6C423A37BD3CFA2455B5CAE6BF" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-string-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpD66046CED07D96400E196CD3DC0D9FF0" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{52A5FF69-EA39-4818-820F-DC29E3F9E28F}">
+                <File Id="fil266A0B21061EEBACF617F0AECA1AC42B" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-synch-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpE5CCD7EB97334C348994299147546161" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{D2F3B30C-8026-4B09-A809-C275E4979E93}">
+                <File Id="fil5D51EE6BBD5EBD67F2FA4B03DCB90C0B" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-synch-l1-2-0.dll" />
+            </Component>
+            <Component Id="cmpDC620E955776BBCE75829BE3BE518D50" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{332FD00A-21E6-416D-9BCD-1EBFAA5A9FF3}">
+                <File Id="fil176B2ADE3DC380336F94B014AC982C08" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-sysinfo-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp21D029CA2CDBF4E57CBFE14CC4C15B6F" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{CAD9C416-40AB-4D18-91D0-5A7E4732C7A1}">
+                <File Id="fil2845E9015A9966FFF006B64E05955AB8" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-timezone-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp08031F89053C30E90EBD7EE70A2B8CD2" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{045F6BD1-9091-446D-9BAF-8DF783BA5782}">
+                <File Id="filE4D3F4AB4352CCE7424E5842A59AB770" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-core-util-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp2D10146CD5D65C20BF4D6862AA9D1EF6" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{E2D0D119-2C25-443C-A9B0-2C9AF91D71DB}">
+                <File Id="filE4DEEA46615CA3BA81EAA0A6A45F7C4B" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-conio-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp2E5E69B02E2576355706C2FAA8C36A0F" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{25401791-6580-477C-94CB-9FA007F5E54F}">
+                <File Id="filDE8CD79787C1B4DD9D9C38F5C9F4DAD5" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-convert-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpCA73DE4C194A0A0E63AC3ABEBAD04300" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{B539FA01-1CD8-4BCD-814B-BF6114268C5F}">
+                <File Id="fil1D066222A154813DBBDC5F735B329DB1" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-environment-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpC367C67A8F37D905F161654EF0CC3894" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{2AAA5FFC-63FF-454B-B71D-03DBB6B75513}">
+                <File Id="fil5F7DFCA58124EBD4AFAC452C208C56C0" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-filesystem-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpF72C0427E0A60E50BBB10D008C71DF51" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{85557B12-87DC-4756-8A7A-62D8CAB06A92}">
+                <File Id="fil7EB1E399BDE8C4297D0AE55CC1A99A7F" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-heap-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp9E30A498D9222A26323062A0FA169C2C" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{C4571E33-E944-4647-915C-B58C647679D7}">
+                <File Id="fil2B4F1FD91C4BFD4700C3C047375478E6" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-locale-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpC1395EDECBBD99181DE42040F572E302" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{736EDCAB-3FEC-48E8-9C7B-33FFF2993110}">
+                <File Id="fil464AF098D82ABB3998FC84AB97906CED" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-math-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmpE7265506121F9F9A5BC17F31C0E847E8" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{7629A86B-131F-4BB8-AA28-0E4607524D04}">
+                <File Id="fil744D3CA96DB90A22EF01025704A51549" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-process-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp8929A49CEB8DE3E933BD2C9D78F2EDD3" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{176CBB34-73AA-469B-9A28-0D2F6EF61170}">
+                <File Id="fil54757D691DB57FFDB01FC1B781103FA5" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-runtime-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp95F3751E8BF04E85194BBEDA75BDE97B" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{2E321C79-8539-48F2-98EC-7789AD0A86EF}">
+                <File Id="filB63A34705C84ED765300E4D76200C340" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-stdio-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp2570FA23DD4DB8089C35FBF6087F89CB" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{19A88598-EF31-4DFA-951A-336942040328}">
+                <File Id="fil91B5C525DFC98F25AD63CB233E81E3E0" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-string-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp3237EE1048DAC736041E6867EE82D243" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{8C7744AE-57AB-40FA-97B2-CF9810694D12}">
+                <File Id="fil4D47783023F4E5287D9F82713C12D3FE" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-time-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp5210FC594A92356A60459414FA1BA55F" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{BE613340-278A-4E47-973A-1A67331FB927}">
+                <File Id="filD5574D05FEB4F9A99683AE7627C64E51" KeyPath="yes" Source="SourceDir\PDFrotate\api-ms-win-crt-utility-l1-1-0.dll" />
+            </Component>
+            <Component Id="cmp01035C974A3A17D2F74608DE95E714D8" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{3D82AA3F-B6DF-44CB-8A41-614A44B28EEB}">
+                <File Id="filE303E9D09CB896D336BA4B2B25D5F070" KeyPath="yes" Source="SourceDir\PDFrotate\base_library.zip" />
+            </Component>
+            <Component Id="cmpF382200D06094C60FA7C651C7E8A3A2B" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{00D81BE5-5CE6-4FDB-B0F3-3AE145C64A8B}">
+                <File Id="filDE589E01DFD1F342209568865E8F5DAF" KeyPath="yes" Source="SourceDir\PDFrotate\libcrypto-1_1.dll" />
+            </Component>
+            <Component Id="cmp8CAC873D257BBA0AE5547F3D37AA2C71" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{FA6DD22A-9B6F-4746-8369-8108F861D51A}">
+                <File Id="fil2BE1D95FD126B5245A31395C57D4051F" KeyPath="yes" Source="SourceDir\PDFrotate\libffi-8.dll" />
+            </Component>
+            <Component Id="cmp564DAF784DBE9357CD955C0B447D4FE2" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{41B205E4-C351-4F9C-9586-804402671E50}">
+                <File Id="filFB26CC22A5FA32BB474800201D106F7C" KeyPath="yes" Source="SourceDir\PDFrotate\libssl-1_1.dll" />
+            </Component>
+            <Component Id="cmp98ED1DF23325FE9685199F5BF6B02AFE" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{025A3818-A00E-4C74-A38E-B8BB1892E7F0}">
+                <File Id="filCAE3733D8B120B82F17C5E607E533068" KeyPath="yes" Source="SourceDir\PDFrotate\PDFrotate.exe" />
+            </Component>
+            <Component Id="cmpC3C1168CCAAF390313AD3727FA4A3009" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{94DA2784-7573-487C-BC6C-CDAD95C81A0E}">
+                <File Id="fil2FC27C887CE2885160339C1E7C707BFA" KeyPath="yes" Source="SourceDir\PDFrotate\pyexpat.pyd" />
+            </Component>
+            <Component Id="cmp595BE28119FAA334F8DACA340D45B956" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{8439A719-3B45-413C-BE63-40830EC64A4A}">
+                <File Id="filE5D53B09919E2FACD2DFCB9EDBB00AA9" KeyPath="yes" Source="SourceDir\PDFrotate\python311.dll" />
+            </Component>
+            <Component Id="cmpC79515B047F8702C63547237C98C2CB6" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{FD5F49B7-B14C-48DF-9708-F3EF56E30AF1}">
+                <File Id="fil45C0622E2E92B2E445B8C63298974EA1" KeyPath="yes" Source="SourceDir\PDFrotate\select.pyd" />
+            </Component>
+            <Component Id="cmpDEE4B3FD4E5045B158BD9ADA48BB9249" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{643BE871-A1B4-4A49-8F14-B690DCA0EA3A}">
+                <File Id="fil3D9C005BB933E8D8A2F50ED45BC6D6E7" KeyPath="yes" Source="SourceDir\PDFrotate\ucrtbase.dll" />
+            </Component>
+            <Component Id="cmpBCECAEDDFD8663C50531C0AB5EFA66D2" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{99C84658-9361-42C4-90F5-EAB339FC3739}">
+                <File Id="fil73C20D1800B9DA9CB2261632C6A592E5" KeyPath="yes" Source="SourceDir\PDFrotate\unicodedata.pyd" />
+            </Component>
+            <Component Id="cmp2C4A4E47CDB2649E67480E0C431E3CB0" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{286913E5-6CF9-447E-A88E-A3D0970CA3CE}">
+                <File Id="fil2713062AD021DCD819FE16D156CE9FA4" KeyPath="yes" Source="SourceDir\PDFrotate\VCRUNTIME140.dll" />
+            </Component>
+            <Component Id="cmp1826F0FBC55BBE6991FE3B85EF2ADB50" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{CFF16844-D4E0-42D8-B0AD-2EED91919C30}">
+                <File Id="filB9B94125BA7B7FE86E0125D1D20850A1" KeyPath="yes" Source="SourceDir\PDFrotate\_asyncio.pyd" />
+            </Component>
+            <Component Id="cmpB673AC7D4D75F068F376DFE0645F4A31" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{3BA3E6CF-527C-4AF1-B791-CAE129808574}">
+                <File Id="fil2FDF3B1B14EDD912B9014347A71E08AD" KeyPath="yes" Source="SourceDir\PDFrotate\_bz2.pyd" />
+            </Component>
+            <Component Id="cmpC86FDAEDB23F153141C9F923A9376859" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{6961CC58-07B7-495D-A626-F6473A748305}">
+                <File Id="fil51846A82D0A18514832A14989674188F" KeyPath="yes" Source="SourceDir\PDFrotate\_ctypes.pyd" />
+            </Component>
+            <Component Id="cmp5B82BFE82F0C1EEF33EC4851481F5995" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{34BEEFC2-26A9-4F9D-833E-EAF9D17A0E54}">
+                <File Id="fil72F9BEEF85F18CBD582C945C814096B9" KeyPath="yes" Source="SourceDir\PDFrotate\_decimal.pyd" />
+            </Component>
+            <Component Id="cmp27E7E7C42F58CABB7793FB5399503A95" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{A7623F13-3874-4C45-9C8C-DC9CB1AAC24D}">
+                <File Id="fil74654FD19BC085364AAF723EB1233F0E" KeyPath="yes" Source="SourceDir\PDFrotate\_hashlib.pyd" />
+            </Component>
+            <Component Id="cmp9F89092A2753A565EBD344792AB6649A" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{72C70C27-6844-423B-B117-902447A39431}">
+                <File Id="filD1709EAAD63FA4E3AEEA448937AA792E" KeyPath="yes" Source="SourceDir\PDFrotate\_lzma.pyd" />
+            </Component>
+            <Component Id="cmpA1280C817681BE3419868A8732237BB0" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{3673079D-04FF-41B0-99B6-49539DA2AD51}">
+                <File Id="fil4DA8678634BDA6CA8454A2C8DE249A30" KeyPath="yes" Source="SourceDir\PDFrotate\_multiprocessing.pyd" />
+            </Component>
+            <Component Id="cmpA44025ECFFFA5893DA1809F74EB7D629" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{B241346C-B9FA-4D87-AA9B-9B40152FCF54}">
+                <File Id="fil42A75DD187AEA405AE9475499669D5B8" KeyPath="yes" Source="SourceDir\PDFrotate\_overlapped.pyd" />
+            </Component>
+            <Component Id="cmp27BCE13469663C9134606D35EF98EF52" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{A0E99C5E-D0D8-4A5C-9DA6-DCA0F028AF40}">
+                <File Id="filF8BF8A27E30AC4FEBC0947B57892CBA2" KeyPath="yes" Source="SourceDir\PDFrotate\_queue.pyd" />
+            </Component>
+            <Component Id="cmpEDE8C0686D4A9C02F9E223EAD88C5150" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{662F9023-CB5D-4317-92A4-247C4CDCDAC2}">
+                <File Id="fil605BA3B7D788B11E2EA6061B9C5AE04B" KeyPath="yes" Source="SourceDir\PDFrotate\_socket.pyd" />
+            </Component>
+            <Component Id="cmp4A1B6EFE8B0F658421A8DBC9AE622A81" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{06CA5B78-2CA3-48EC-9F43-90DAC2F4A4F3}">
+                <File Id="filFA6F09CE589A36BABB1FC09F72AA74A6" KeyPath="yes" Source="SourceDir\PDFrotate\_ssl.pyd" />
+            </Component>
+            <Component Id="cmpEA1D59295D23891931D7591365875A6A" Directory="dir970CC30FEA6448CCE16E655F30B9947C" Guid="{03AE7457-093B-49B9-AC1E-9E556CC9DF56}">
+                <File Id="filE34713A32465B82A93F564DAF5809B1D" KeyPath="yes" Source="SourceDir\PDFrotate\_uuid.pyd" />
+            </Component>
+            <Component Id="cmp20F1EC7F31D517B8CF2920BFFC03D300" Directory="dir6A6CC65DE5240BB9E804168314C9F8DE" Guid="{A29BA396-A24B-40AE-BD17-6C207C44941E}">
+                <File Id="filA483AF4F1C1ABF4A300D6BC3C915D204" KeyPath="yes" Source="SourceDir\PDFrotate\certifi\cacert.pem" />
+            </Component>
+            <Component Id="cmpF7F1E7B1CCD18A7FEC228B013F80450D" Directory="dir6A6CC65DE5240BB9E804168314C9F8DE" Guid="{B12C6D47-9EB2-41EE-AA58-3611FA861595}">
+                <File Id="fil925A68E30F4DCAC762EA4DC5F8B8A575" KeyPath="yes" Source="SourceDir\PDFrotate\certifi\py.typed" />
+            </Component>
+            <Component Id="cmp78596C617CDF3B2F48066A2A719466C2" Directory="dirF8F168CF49F3D7DA2C6F964D6CC6F236" Guid="{91773C03-7DBE-4E3C-B273-0AD2854943B4}">
+                <File Id="fil27B68EE55651133699FB03EBD09A4FE8" KeyPath="yes" Source="SourceDir\PDFrotate\fitz\_fitz.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmp5E3B5A34C06BD3928D281D1CA3B4ED1F" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{1CDE6AC3-8A5C-4AD7-AA45-A8669C058726}">
+                <File Id="fil38FE499A815EEEFBA4F267D1B74A2FDC" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\audioplayers_windows_plugin.dll" />
+            </Component>
+            <Component Id="cmp569767C05F9682BB2731D5461E4B7C15" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{9FFCE808-CFCB-4C1B-80C4-760CC04F174E}">
+                <File Id="filFD5733E16C324E4420696B936541AF33" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\flet.exe" />
+            </Component>
+            <Component Id="cmpD9521C52445EE90E1063FBFA48E18076" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{9EC6732C-080D-4002-B9F5-C3503B7D85D2}">
+                <File Id="filF746AA552883F79905391CCF0D48221B" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\flutter_windows.dll" />
+            </Component>
+            <Component Id="cmp07F1FAE74FD33CFA343ABF8AB7180072" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{5F440E56-DD27-4615-B35B-9D24C02EC929}">
+                <File Id="fil6AB90583AD7ACC4AAB02D3D4DFB89318" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\msvcp140.dll" />
+            </Component>
+            <Component Id="cmp9646C2AC57669FD11C686EC39F35B49E" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{290F2951-A49B-4F59-91C5-250136030BB9}">
+                <File Id="fil7E359ABC224D0AB658841B2175860D8F" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\screen_retriever_plugin.dll" />
+            </Component>
+            <Component Id="cmp72F96C21F453E678AC1E3090B96C5112" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{C458C653-CC00-4668-B5D1-83174F02DD93}">
+                <File Id="filB136BA466EF785E683A9FF3C4CB2E66C" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\url_launcher_windows_plugin.dll" />
+            </Component>
+            <Component Id="cmp6379E94F5EF862403E6C39D5CCFA979A" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{8323F5FB-7147-4913-A613-EB1F061B303C}">
+                <File Id="filD6F791F3A03444D689A4CEE7D4E936BF" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\vcruntime140.dll" />
+            </Component>
+            <Component Id="cmp3FBA005D8D8741D2C791E7331A3AE2A0" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{B8279944-19BE-4ECA-9721-56F1C5D1E442}">
+                <File Id="fil02BE0D77AF0CFAD069E0D8F997E55E1E" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\vcruntime140_1.dll" />
+            </Component>
+            <Component Id="cmpE625E47DB43BA957D8EF81DB0FEA964E" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{9A5203DA-71D6-445F-A54A-DF6CDFA8F648}">
+                <File Id="filE868840046737496661DCEA491A4D4D8" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\window_manager_plugin.dll" />
+            </Component>
+            <Component Id="cmp3C78247B7A5AA7762E33028678FA9CA1" Directory="dirBC7107DA9736A4986C31719BC4AE4F8D" Guid="{25CE6BCD-88E1-42D7-896C-D376C366F2C4}">
+                <File Id="fil8F97540500E4F3A109EE97CF96392C9F" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\window_to_front_plugin.dll" />
+            </Component>
+            <Component Id="cmp74B4737D4CB7BC865D758158268139FC" Directory="dirC4F768C159AFB757BED0A390777806C0" Guid="{71B958FD-AC84-4561-8ED9-48D2CEF49F3F}">
+                <File Id="fil461C878FE0FA4032F38DD1F6BD244AAB" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\app.so" />
+            </Component>
+            <Component Id="cmp498BE67449A428A859F88ED6E04CA0A5" Directory="dirC4F768C159AFB757BED0A390777806C0" Guid="{378C5379-E3BC-4AA0-B0B6-ED4C4B465D8E}">
+                <File Id="fil89334E5C6A5A4B731C3875D93BD193F7" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\icudtl.dat" />
+            </Component>
+            <Component Id="cmp6E3D01746E754140DAAD80611A72ECA2" Directory="dir6C2DD64C73E01E0A123ADCA853CA7452" Guid="{5B867310-42EF-4783-9AF1-F441F95B8C82}">
+                <File Id="fil16B78868715018A46A0F698023998998" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\AssetManifest.json" />
+            </Component>
+            <Component Id="cmpDE70DCFE6FA5EF16EC03417D7380103D" Directory="dir6C2DD64C73E01E0A123ADCA853CA7452" Guid="{ADA17858-06A8-4246-963A-CCC2AC052C65}">
+                <File Id="filC57F90179BA4A51FD35CD3FFD0D13C33" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\FontManifest.json" />
+            </Component>
+            <Component Id="cmpE509DA66ECDD87A9D5AF5817B4921D54" Directory="dir6C2DD64C73E01E0A123ADCA853CA7452" Guid="{34C176FB-1F39-4C22-99DA-DDB872C48D72}">
+                <File Id="fil45970BB64AD672831CEC9811B73C9DD4" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\NOTICES.Z" />
+            </Component>
+            <Component Id="cmp436F31E23482B04E01311ECF571B8A52" Directory="dirCDB716AE992B281BA1C31BBFBA29882D" Guid="{8CBEB8AD-C932-4B47-8CA9-BC470A48BDE2}">
+                <File Id="filB610693CCFB074043A79612A2170AA64" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\fonts\MaterialIcons-Regular.otf" />
+            </Component>
+            <Component Id="cmp0A5ABCFDD8C87C524883188A92FBFD65" Directory="dirF3BF6AD8147FFFE5CA6FFFA02368671D" Guid="{797C59A5-11EB-44D5-9625-24E46A997023}">
+                <File Id="filF4D5E8EF3085CF27787128C6889769B6" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\packages\window_manager\images\ic_chrome_close.png" />
+            </Component>
+            <Component Id="cmpD54452DDD07492AA713320EDF1785753" Directory="dirF3BF6AD8147FFFE5CA6FFFA02368671D" Guid="{18D649E0-60A0-4CCF-883A-15C2F9010BFF}">
+                <File Id="fil4C5D574F32D76CDD089C5867CCB84152" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\packages\window_manager\images\ic_chrome_maximize.png" />
+            </Component>
+            <Component Id="cmpA87F294B966280B638C85BD4FF25D483" Directory="dirF3BF6AD8147FFFE5CA6FFFA02368671D" Guid="{DA032940-E806-4171-AAAF-F950C674D1C1}">
+                <File Id="filBA2B591267339863CE852E7454905D33" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\packages\window_manager\images\ic_chrome_minimize.png" />
+            </Component>
+            <Component Id="cmpA0B5D1A051C84DD4DA370E2128C58E3D" Directory="dirF3BF6AD8147FFFE5CA6FFFA02368671D" Guid="{34D6B80D-9C6A-4EE2-B5DC-96DA28DF2761}">
+                <File Id="filE8D160F25091F5E416FC12F44B22C74A" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\packages\window_manager\images\ic_chrome_unmaximize.png" />
+            </Component>
+            <Component Id="cmpE393B7D7ECDB2469D3B72518B6A0E068" Directory="dir05A775FCDF88591474624C3608C47595" Guid="{099C160B-F861-4243-BDC7-5EBBFF91D13D}">
+                <File Id="filD160849773E42C635E5ED9648DBE1750" KeyPath="yes" Source="SourceDir\PDFrotate\flet\bin\flet\data\flutter_assets\shaders\ink_sparkle.frag" />
+            </Component>
+            <Component Id="cmp6D105D96E003B36F2EC4B9FCB82083B6" Directory="dirB1ACF6DAB7F2AAF38D1E89A3568B3F36" Guid="{61AB9532-A3A0-4D56-95F8-5C65447CC2BE}">
+                <File Id="fil0696E2960D80C32BD61FC853496B8BDE" KeyPath="yes" Source="SourceDir\PDFrotate\PIL\_imaging.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmp14092A72DDD37426248E8F6FFE377439" Directory="dirB1ACF6DAB7F2AAF38D1E89A3568B3F36" Guid="{8284E6C0-8BD1-4526-9BAA-85349EBB86E9}">
+                <File Id="fil60D3975B69B401FB7AFB62ABDE0254E4" KeyPath="yes" Source="SourceDir\PDFrotate\PIL\_imagingcms.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmpF6669E096C6E72B5586997159DEDD334" Directory="dirB1ACF6DAB7F2AAF38D1E89A3568B3F36" Guid="{A84A1D0C-331A-479C-957A-84CBE1910059}">
+                <File Id="filD5367DCCABE1169168C52DDC1F785E17" KeyPath="yes" Source="SourceDir\PDFrotate\PIL\_imagingtk.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmpDEDBAEFBD5CB0647FB4B70AD9CAF3841" Directory="dirB1ACF6DAB7F2AAF38D1E89A3568B3F36" Guid="{C6DAA3F5-8E96-4D76-9FA1-E06FA5EB4782}">
+                <File Id="filB2B919DDC994FF5ABE622906D49FF01C" KeyPath="yes" Source="SourceDir\PDFrotate\PIL\_webp.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmpCC0DF8FFA19C458F96D8E3F66095531A" Directory="dirD5F67B5992F5E14E31F6731274F8F6AF" Guid="{09DF1FB9-0C7D-44E9-AB06-2C65175DA311}">
+                <File Id="filEAA585202A65F71E00A8F2284617DA50" KeyPath="yes" Source="SourceDir\PDFrotate\websockets\speedups.cp311-win_amd64.pyd" />
+            </Component>
+            <Component Id="cmpCD599412336363A1D98DA44A97EF2A2C" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{DF4ECCF0-12AF-4470-B7A4-FA805BC5D6B7}">
+                <File Id="filF4A0BC0810D70E87476DD6CD17AB5C37" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\INSTALLER" />
+            </Component>
+            <Component Id="cmpED0CE7E26AE4DE11BC4A5F3280658715" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{22D8E54E-88B4-406E-9796-2E95BCE3DBD4}">
+                <File Id="filD6C92A19FDADE30C6BF0E0F8BEC07311" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\LICENSE" />
+            </Component>
+            <Component Id="cmpB64BE5402F70A4D31553CD1CE8ED92FD" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{460F6491-EAD0-4375-8470-04986791914D}">
+                <File Id="fil988D25B6345E52D69429CF71173073B5" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\METADATA" />
+            </Component>
+            <Component Id="cmp17C4D12F7304FEDDD2B6F42FC9A8F341" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{71C63494-2822-4AAB-A042-57D9EBBF2FE1}">
+                <File Id="fil541EF15DB2BAD0FD596488093C2EB5A7" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\RECORD" />
+            </Component>
+            <Component Id="cmpCD519277A40E7C99CEF3764E6FD42555" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{F93BB054-E5DC-4581-B021-2444B66759D9}">
+                <File Id="fil898F79DB086B79DBD593820620C31A83" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\top_level.txt" />
+            </Component>
+            <Component Id="cmp35FD96ADC224F67701B4DEF87AB6FDDC" Directory="dir87FF0F310104347837F322F2EFE97844" Guid="{8F30BDFD-A394-4E3B-9737-17138A2A63EC}">
+                <File Id="filDA1928861AD722065C661BC1C4CD0B5E" KeyPath="yes" Source="SourceDir\PDFrotate\websockets-10.4.dist-info\WHEEL" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir6C2DD64C73E01E0A123ADCA853CA7452">
+            <Directory Id="dir05A775FCDF88591474624C3608C47595" Name="shaders" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir6C2DD64C73E01E0A123ADCA853CA7452">
+            <Directory Id="dir0D0A480A1B55F4CA389DB9693BF987FA" Name="packages" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dir6A6CC65DE5240BB9E804168314C9F8DE" Name="certifi" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirC4F768C159AFB757BED0A390777806C0">
+            <Directory Id="dir6C2DD64C73E01E0A123ADCA853CA7452" Name="flutter_assets" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dir87FF0F310104347837F322F2EFE97844" Name="websockets-10.4.dist-info" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dir9C1961D7EFB250AB83035182BA9D5AAD" Name="flet" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dirB1ACF6DAB7F2AAF38D1E89A3568B3F36" Name="PIL" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirC5912A137ECB23CFFDD5CE7EAF9016DC">
+            <Directory Id="dirBC7107DA9736A4986C31719BC4AE4F8D" Name="flet" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir0D0A480A1B55F4CA389DB9693BF987FA">
+            <Directory Id="dirC1FF4A1EF663E3153D8991E198191355" Name="window_manager" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirBC7107DA9736A4986C31719BC4AE4F8D">
+            <Directory Id="dirC4F768C159AFB757BED0A390777806C0" Name="data" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9C1961D7EFB250AB83035182BA9D5AAD">
+            <Directory Id="dirC5912A137ECB23CFFDD5CE7EAF9016DC" Name="bin" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir6C2DD64C73E01E0A123ADCA853CA7452">
+            <Directory Id="dirCDB716AE992B281BA1C31BBFBA29882D" Name="fonts" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dirD5F67B5992F5E14E31F6731274F8F6AF" Name="websockets" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirC1FF4A1EF663E3153D8991E198191355">
+            <Directory Id="dirF3BF6AD8147FFFE5CA6FFFA02368671D" Name="images" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir970CC30FEA6448CCE16E655F30B9947C">
+            <Directory Id="dirF8F168CF49F3D7DA2C6F964D6CC6F236" Name="fitz" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>
