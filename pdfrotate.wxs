@@ -10,7 +10,7 @@
     <Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
     <Property Id='DiskPrompt' Value="Acme's PDFrotate 1.0 Installation [1]" />
 
-    <Directory Id='TARGETDIR' Name='PDFrotate'>
+    <Directory Id='TARGETDIR' Name='SourceDir'>
       <Directory Id='ProgramFilesFolder' Name='PFiles'>
         <Directory Id='Acme' Name='Acme'>
           <Directory Id='INSTALLDIR' Name='PDFrotate 1.0'>
