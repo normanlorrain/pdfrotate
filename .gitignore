@@ -5,3 +5,5 @@ dist/
 *.spec
 generated*.ico
 *.wixobj
+*.msi
+*.wixpdb
