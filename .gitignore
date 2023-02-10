@@ -7,3 +7,4 @@ generated*.ico
 *.wixobj
 *.msi
 *.wixpdb
+dist.wxs
