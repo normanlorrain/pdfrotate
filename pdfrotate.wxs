@@ -13,21 +13,9 @@
     <Directory Id='TARGETDIR' Name='SourceDir'>
       <Directory Id='ProgramFilesFolder' Name='PFiles'>
         <Directory Id='Acme' Name='Acme'>
-          <Directory Id='INSTALLDIR' Name='PDFrotate 1.0'>
-
-            <Component Id='MainExecutable' Guid='A89790C2-2DFA-465F-85D6-57A0668D6754'>
-              <File Id='PDFrotateEXE' Name='pdfrotate.exe' DiskId='1' Source="dist\PDFrotate\PDFrotate.exe" KeyPath='yes'>
-                <Shortcut Id="startmenuPDFrotate10" Directory="ProgramMenuDir" Name="PDFrotate 1.0" WorkingDirectory='INSTALLDIR' Icon="pdf.ico" IconIndex="0" Advertise="yes" />
-                <Shortcut Id="desktopPDFrotate10" Directory="DesktopFolder" Name="PDFrotate 1.0" WorkingDirectory='INSTALLDIR' Icon="pdf.ico" IconIndex="0" Advertise="yes" />
-              </File>
-            </Component>
-
-            <Component Id='PDFrotateFiles' Guid='22A005F3-1FD5-4E4C-A94C-7BEB9691E643'>
-            </Component>
-          </Directory>
+          <Directory Id='RootData' Name='PDFrotate 1.0' />
         </Directory>
       </Directory>
-
       <Directory Id="ProgramMenuFolder" Name="Programs">
         <Directory Id="ProgramMenuDir" Name="PDF Rotate">
           <Component Id="ProgramMenuDir" Guid="1D16943D-EE40-4A85-8FA7-08597A26C195">
@@ -37,12 +25,19 @@
         </Directory>
       </Directory>
 
-      <Directory Id="DesktopFolder" Name="Desktop" />
+      <Component Id='MainExecutable' Guid='A89790C2-2DFA-465F-85D6-57A0668D6754'>
+        <File Id='PDFrotateEXE' Name='pdfrotate.exe' DiskId='1' Source="dist\PDFrotate\PDFrotate.exe" KeyPath='yes'>
+          <Shortcut Id="startmenuPDFrotate10" Directory="ProgramMenuDir" Name="PDFrotate 1.0" WorkingDirectory='INSTALLDIR' Icon="pdf.ico" IconIndex="0" Advertise="yes" />
+        </File>
+      </Component>      
     </Directory>
+
 
     <Feature Id='Complete' Level='1'>
       <ComponentRef Id='MainExecutable' />
       <ComponentRef Id='ProgramMenuDir' />
+      <ComponentGroupRef Id="RootDataGroup" />
+
     </Feature>
 
     <Icon Id="pdf.ico" SourceFile="pdf.ico" />

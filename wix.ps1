@@ -6,11 +6,20 @@ $env:Path = 'C:\Program Files (x86)\WiX Toolset v3.11\bin;' + $env:Path
 #    -cg <ComponentGroupName> 
 #    -gg                      == Generate GUIDS
 #    -out dist.wxs            == output 
-heat dir dist -sw5150 -cg PDFrotateFiles -gg -out dist.wxs
+
+# Arguments stolen from DCSPresetManager
+# os.path.join(wix_bin, 'heat.exe'), 'dir', r'dist\DCSPresetManager',
+# '-ke', '-srd', '-v', '-ag',
+# '-cg', 'RootDataGroup',
+# '-dr', 'RootData',
+# '-t', r'wix\appShortcut.xsl',
+# '-out', r'build\wix\src.wix'
+
+heat dir dist\PDFrotate -sw5150 -ke -srd -v -ag -cg RootDataGroup -dr RootData  -out dist.wxs
 
 # "Compile" the XML
 candle pdfrotate.wxs  dist.wxs
 
 # "Link" the XML
-light -out foobar .\pdfrotate.wixobj .\dist.wixobj
+light -out foobar -b dist\PDFrotate  .\pdfrotate.wixobj .\dist.wixobj
 
