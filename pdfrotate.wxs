@@ -22,7 +22,8 @@
               </File>
             </Component>
 
-
+            <Component Id='PDFrotateFiles' Guid='22A005F3-1FD5-4E4C-A94C-7BEB9691E643'>
+            </Component>
           </Directory>
         </Directory>
       </Directory>

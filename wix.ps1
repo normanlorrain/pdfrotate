@@ -6,7 +6,7 @@ $env:Path = 'C:\Program Files (x86)\WiX Toolset v3.11\bin;' + $env:Path
 #    -cg <ComponentGroupName> 
 #    -gg                      == Generate GUIDS
 #    -out dist.wxs            == output 
-heat dir dist -srd -cg PDFrotate -gg -out dist.wxs
+heat dir dist -sw5150 -cg PDFrotateFiles -gg -out dist.wxs
 
 # "Compile" the XML
 candle pdfrotate.wxs  dist.wxs
