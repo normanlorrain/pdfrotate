@@ -1,0 +1,39 @@
+          <Component Id="ProgramMenuDir" Guid="1D16943D-EE40-4A85-8FA7-08597A26C195">
+            <RemoveFolder Id='ProgramMenuDir' On='uninstall' />
+            <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
+          </Component>
+
+
+
+
+                <Component Id='MainExecutable' Guid='A89790C2-2DFA-465F-85D6-57A0668D6754'>
+        <File Id='PDFrotateEXE' Name='pdfrotate.exe' DiskId='1' Source="dist\PDFrotate\PDFrotate.exe" KeyPath='yes'>
+          <Shortcut Id="startmenuPDFrotate10" Directory="ProgramMenuDir" Name="PDFrotate 1.0" WorkingDirectory='INSTALLLOCATION' Icon="pdf.ico" IconIndex="0" Advertise="yes" />
+        </File>
+      </Component>      
+
+
+
+  <!-- Step 2: Add the shortcut to your installer package -->
+    <DirectoryRef Id="PdfRotateProgramMenuDir">  <!-- point to the element above  -->
+        <Component Id="ApplicationShortcut" Guid="*">
+            <Shortcut Id="ApplicationStartMenuShortcutPdfRotate"
+                      Name="PDF Rotate"
+                      Description="An application for rotating pages in a PDF file"
+                      Target="[#yapplication.exe]"   
+                      WorkingDirectory="RootData"
+                      Icon="pdf.ico" 
+                      IconIndex="0" 
+                       />
+            <RemoveFolder Id="CleanUpShortCut" Directory="PdfRotateProgramMenuDir" On="uninstall"/>
+            <RegistryValue Root="HKCU" Key="Software\PDFrotate\PDFRotate" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+        </Component>
+    </DirectoryRef>
+
+
+
+        <DirectoryRef Id="RootData"> <!-- point to the element in TARGETDIR/ProgramfilesFolder-->
+      <Component Id='MainExecutable' Guid="*">
+                <File Id="myapplication.exe" Source="SourceDir\PDFrotate.exe" KeyPath="yes" Checksum="yes"/>
+      </Component>  
+    </DirectoryRef>
