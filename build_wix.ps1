@@ -15,7 +15,7 @@ $env:Path = 'C:\Program Files (x86)\WiX Toolset v3.11\bin;' + $env:Path
 # '-dr', 'RootData',
 # '-t', r'wix\appShortcut.xsl',
 # '-out', r'build\wix\src.wix'
-heat dir dist\PDFrotate -sw5150 -ke -srd -v -ag -cg RootDataGroup -dr RootData  -out dist.wxs
+heat dir dist\PDFrotate -sw5150 -ke -srd -v -ag -cg RootDataGroup -dr RootData  -t shortcut.xsl -out dist.wxs
 if (-not $?) { throw "heat failed" }
 
 
@@ -29,5 +29,5 @@ if (-not $?) { throw "candle failed" }
 
 
 # "Link" the XML
-light -out foobar -b dist\PDFrotate  .\pdfrotate.wixobj .\dist.wixobj
+light -out pdf_rotate_installer -b dist\PDFrotate  .\pdfrotate.wixobj .\dist.wixobj
 if (-not $?) { throw "light failed" }
