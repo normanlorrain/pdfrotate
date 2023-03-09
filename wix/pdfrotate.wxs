@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-  <Product Name='PDF Rotate 1.0' Id='345D3268-5400-4360-9459-194F613A961D' UpgradeCode='350E2DF1-982C-4DB8-BF9D-29028B302437'
+  <Product Name='PDF Rotate 0.0' Id='345D3268-5400-4360-9459-194F613A961D' UpgradeCode='350E2DF1-982C-4DB8-BF9D-29028B302437'
     Language='1033' Codepage='1252' Version='0.0.1' Manufacturer='Norman Lorrain'>
 
     <Package Id='*' Keywords='Installer' Description="PDF Rotate Installer"
