@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-  <Product Name='PDFrotate 1.0' Id='345D3268-5400-4360-9459-194F613A961D' UpgradeCode='350E2DF1-982C-4DB8-BF9D-29028B302437'
+  <Product Name='PDF Rotate 1.0' Id='345D3268-5400-4360-9459-194F613A961D' UpgradeCode='350E2DF1-982C-4DB8-BF9D-29028B302437'
     Language='1033' Codepage='1252' Version='0.0.1' Manufacturer='Norman Lorrain'>
 
-    <Package Id='*' Keywords='Installer' Description="PDFrotate Installer"
-      Comments='PDFrotate.' Manufacturer='Norman Lorrain'
+    <Package Id='*' Keywords='Installer' Description="PDF Rotate Installer"
+      Comments='PDF Rotate.' Manufacturer='Norman Lorrain'
       InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
 
     <Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
-    <Property Id='DiskPrompt' Value="PDFrotate Installation" />
+    <Property Id='DiskPrompt' Value="PDF Rotate Installation" />
 
 	<!-- Folder Structure -->
     <Directory Id='TARGETDIR' Name='SourceDir'>
       <!-- create program structure -->
       <Directory Id='ProgramFilesFolder'>
-        <Directory Id='RootData' Name='PDFrotate' />  <!-- RootData is from the dist.wxs file.  This will get linked -->
+        <Directory Id='RootData' Name='PDF Rotate' />  <!-- RootData is from the dist.wxs file.  This will get linked -->
       </Directory>
   	  <Directory Id="ProgramMenuFolder" />
     </Directory>
