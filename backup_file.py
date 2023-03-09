@@ -9,9 +9,8 @@ class BackupFile:
         self.keep = False  # if we exit without changes, don't save the backup.
         name = pathlib.Path(name)
         timestamp = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
-        stem = f"{name.stem} (pdfrotate {timestamp})"
-        self.temporaryBackup = name.with_stem("~" + stem)
-        self.permanentBackup = name.with_stem(stem)
+        self.temporaryBackup = name.with_stem(f"~{name.stem}")
+        self.permanentBackup = name.with_stem(f"{name.stem} (pdfrotate {timestamp})")
 
         shutil.copyfile(name, self.temporaryBackup)
         print("Backup file created")

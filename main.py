@@ -7,7 +7,21 @@ pdfFile = None
 img = None
 
 
+def page_window(e):
+    global pdfFile
+
+    print(e.data)
+    if e.data == "close":
+        if pdfFile:
+            del pdfFile
+        e.page.window_destroy()
+
+
 def main(page: ft.Page):
+    page.window_center()
+    page.on_window_event = page_window
+    page.window_prevent_close = True
+
     def pick_files_result(e: ft.FilePickerResultEvent):
         if not e.files:
             print("Cancelled!")
@@ -68,7 +82,6 @@ def main(page: ft.Page):
     pick_files_dialog = ft.FilePicker(on_result=pick_files_result)
     page.overlay.append(pick_files_dialog)
 
-    page.window_center()
     page.title = "PDF Rotate"
     page.window_width = 85 * 5  # pdf.width
     page.window_height = 110 * 5  # pdf.height
