@@ -15,8 +15,6 @@ class pdf:
         # Be conservative and make a backup of the file first
         self.backup = BackupFile(fname)
 
-        # Opening the PDF in memory, because during testing I found working with the
-        # file on disk would lead to occasional file corruption.
         self.name = fname
         inputFile = open(fname, "rb")
         bytes = inputFile.read()
@@ -27,17 +25,12 @@ class pdf:
         self.page_count = len(self.doc)
         self.currentPage = 0
 
-        # allocate storage for page display lists
-        # dlist_tab = [None] * page_count
-
         title = "PyMuPDF display of '%s', pages: %i" % (fname, self.page_count)
 
     def __del__(self):
         pass
 
-    # ------------------------------------------------------------------------------
     # read the page data
-    # ------------------------------------------------------------------------------
     def get_page(self, pno, zoom=False, max_size=None):
         global width, height
 
@@ -69,23 +62,6 @@ class pdf:
         new_rotation = (current_rotation + 180) % 360
         self.doc[self.currentPage].set_rotation(new_rotation)
 
-    # def saveWithBackup(self):
-    #     fpath = pathlib.Path(self.doc.name)
-    #     newstem = fpath.stem + "-"
-    #     newname = fpath.with_stem(newstem)
-
-    #     self.doc.save(
-    #         newname, incremental=False, encryption=fitz.PDF_ENCRYPT_KEEP
-    #     )  # update the file - a sub-second matter
-
-    # def saveIncremental(self):
-    #     self.doc.save(
-    #         pathlib.Path(self.doc.name),
-    #         incremental=True,
-    #         encryption=fitz.PDF_ENCRYPT_KEEP,
-    #     )  # update the file - a sub-second matter
-
     def save(self):
-        # fpath = pathlib.Path(self.name)
         self.backup.keep = True
         self.doc.save(self.name)
