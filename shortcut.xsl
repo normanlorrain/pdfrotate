@@ -21,8 +21,8 @@
     <xsl:copy>
 	  
       <xsl:apply-templates select="@*|node()"/>
-      <xsl:comment> added shortcut under Component with File that has Source with PDFrotate.exe</xsl:comment> 
-      
+      <!-- <xsl:comment> added shortcut under Component with File that has Source with PDFrotate.exe</xsl:comment>  -->
+
       <Shortcut 
         Id="ProgExeShortcut" 
         Name="PDF Rotate" 
