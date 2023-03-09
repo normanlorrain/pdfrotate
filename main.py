@@ -7,6 +7,7 @@ pdfFile = None
 img = None
 
 
+# We need to catch the window close event, so that we can clean up.  It's not automatic, sadly.
 def page_window(e):
     global pdfFile
 
