@@ -4,7 +4,13 @@ build/
 dist/
 *.spec
 generated*.ico
+
+# wix installer files
 *.wixobj
 *.msi
 *.wixpdb
 dist.wxs
+
+
+# Test PDF backups
+~*.pdf
