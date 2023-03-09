@@ -16,11 +16,7 @@
       <Directory Id='ProgramFilesFolder'>
         <Directory Id='RootData' Name='PDFrotate' />  <!-- RootData is from the dist.wxs file.  This will get linked -->
       </Directory>
-
-      <!-- create a start menu shortcut. -->
-      <Directory Id="ProgramMenuFolder"> <!--The ProgramMenuFolder Id is a standard Windows Installer property that points to the Start Menu folder. -->
-        <Directory Id="PdfRotateProgramMenuDir" Name="PDF Rotate" />  <!-- Creates a subfolder in the Start Menu -->
-      </Directory>
+  	  <Directory Id="ProgramMenuFolder" />
     </Directory>
 
     <Icon Id="pdf.ico" SourceFile="pdf.ico" />
