@@ -15,21 +15,14 @@
     indent="yes"    
     />
 	
-  <!-- Force all components to be Win64="yes" as pyside2 etc. are 32 bit -->
-  <xsl:template match='wix:Component'>
-    <xsl:copy>
-	  <xsl:attribute name="Win64">yes</xsl:attribute>
-      <xsl:apply-templates select="@*|node()"/>
-    </xsl:copy>
-  </xsl:template>
-	
-  
+
   <xsl:template match='wix:Component[contains(wix:File/@Source, "SourceDir\PDFrotate.exe")]'> 
     <!-- assumes there is only one Prog.exe -->
     <xsl:copy>
-	  <xsl:attribute name="Win64">yes</xsl:attribute>
+	  
       <xsl:apply-templates select="@*|node()"/>
-      <xsl:comment> added shortcut under Component with File that has Source with PDFrotate.exe</xsl:comment>
+      <xsl:comment> added shortcut under Component with File that has Source with PDFrotate.exe</xsl:comment> 
+      
       <Shortcut 
         Id="ProgExeShortcut" 
         Name="PDF Rotate" 
