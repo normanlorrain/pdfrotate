@@ -2,6 +2,7 @@
 
 A Windows program to rotate PDF pages.  A mashup of [Flet](https://flet.dev/) and [PyMuPDF ](https://pymupdf.readthedocs.io/en/latest/document.html).
 
+Also testing GitHub Actions.
 
 
 
