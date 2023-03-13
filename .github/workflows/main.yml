@@ -30,5 +30,24 @@ jobs:
       with:
         name: "Windows Installer"
         path: ./wix/pdf_rotate_installer.msi
-        
+    - name: release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: "TODO: ${{ steps.version.outputs.version }}"
+          tag_name: "TODO:${{ github.ref }}"
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+    - name: upload windows artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./wix/pdf_rotate_installer.msi
+          asset_name: pdf_rotate_installer.msi
+          asset_content_type: application/octet-stream    
     
