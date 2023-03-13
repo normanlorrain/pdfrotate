@@ -30,9 +30,11 @@ jobs:
       with:
         name: "Windows Installer"
         path: ./wix/pdf_rotate_installer.msi
+    # Create a release with the artifact
     - name: release
       uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: pdf_rotate_installer.msi
+        files: ./wix/pdf_rotate_installer.msi
         
     
