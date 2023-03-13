@@ -38,7 +38,6 @@ jobs:
         prerelease: false
         release_name: "TODO: ${{ steps.version.outputs.version }}"
         tag_name: "TODO:${{ github.ref }}"
-        body_path: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: upload windows artifact
