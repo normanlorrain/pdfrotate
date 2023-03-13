@@ -6,7 +6,7 @@ name: Build and create release
 on: push
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
