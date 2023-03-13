@@ -22,9 +22,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: pip install -r requirements.txt
-    - run: flet pack -i .\wix\pdf.png -n PDFrotate --onedir .\src\main.py
+    - run: pwsh ./build.ps1
+    - run: pwsh ./build_wix.ps1
     
     - uses: actions/upload-artifact@v3
       with:
-        name: pdfrotate
-        path: dist/PDFrotate/PDFrotate.exe
+        name: "Windows Installer"
+        path: ./wix/pdf_rotate_installer.msi
