@@ -18,16 +18,12 @@ jobs:
     steps:
     - name: checkout
     - uses: actions/checkout@v3
-
     - name: install requirements
     - run: pip install -r requirements.txt
-    
     - name: run PyInstaller
     - run: pwsh ./build.ps1
-    
     - name: run WiX Toolset
     - run: pwsh ./build_wix.ps1
-    
     # I think this just uploads the artifact to the workflow run 
     - name: save artifact
     - uses: actions/upload-artifact@v3
