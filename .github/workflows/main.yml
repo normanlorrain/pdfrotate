@@ -5,8 +5,7 @@ name: Build and create release
 
 on: push
 
-permissions:
-  contents: read
+
 
 jobs:
   build:
