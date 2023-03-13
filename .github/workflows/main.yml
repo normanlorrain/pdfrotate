@@ -36,8 +36,8 @@ jobs:
       with:
         draft: false
         prerelease: false
-        release_name: "TODO: ${{ steps.version.outputs.version }}"
-        tag_name: "TODO:${{ github.ref }}"
+        release_name: TODO
+        tag_name: TODO
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: upload windows artifact
