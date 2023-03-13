@@ -1,9 +1,7 @@
 # borrowed from: https://github.com/0h-n0/myflet
-#
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# and https://trstringer.com/github-actions-create-release-upload-artifacts/
 
-name: Build with PyInstaller
+name: Build and create release
 
 on:
   push:
@@ -16,16 +14,25 @@ permissions:
 
 jobs:
   build:
-
     runs-on: windows-2022
-
     steps:
+    - name: checkout
     - uses: actions/checkout@v3
+
+    - name: install requirements
     - run: pip install -r requirements.txt
+    
+    - name: run PyInstaller
     - run: pwsh ./build.ps1
+    
+    - name: run WiX Toolset
     - run: pwsh ./build_wix.ps1
     
+    # I think this just uploads the artifact to the workflow run 
+    - name: save artifact
     - uses: actions/upload-artifact@v3
       with:
         name: "Windows Installer"
         path: ./wix/pdf_rotate_installer.msi
+        
+    
